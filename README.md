@@ -8,15 +8,20 @@ Youtube linki
 (Gelecekte)
 
 İnstagram linki (İnstagram da yaptığım çalışamaları parça parça paylaşmıştım)
+
 https://www.instagram.com/p/CMzY1dgjBJ7/
+
 https://www.instagram.com/p/CMRu8-GggLQ/
+
 https://www.instagram.com/p/CITJW1PAbS8/
+
 https://www.instagram.com/p/CHFhDJ2gAXG/
+
 https://www.instagram.com/p/CGsFZzfAq5T/
 
 Özellikleri 
 
-📌 Masalar kısmına müşteri seç, açık adisyonlar, Paket servis kısmı ekledi
+📌 Masalar kısmına müşteri seç, açık adisyonlar, Paket servis kısmı eklendi
 
 📌 Sipariş kısmında adisyon notu eklendi ve onun için klavye eklendi
 
