@@ -1,7 +1,7 @@
 # restaurant_management_system
 
-REestoran otomasyonuna bakmak istiyorsanız rar dosyasını indiriniz.
-Bitirme projesi olarak yaptığım Restoran otomasyonunun tanıtıldığı ve başka projem olan wordpress website linki
+Restoran otomasyonuna bakmak istiyorsanız rar dosyasını indiriniz.
+Bitirme projesi olarak yaptığım Restoran otomasyonunun tanıtıldığı ve başka projem olan wordpress website linki aşağıda verilmiştir.
 https://adisyon.megarasoft.info/
 
 Youtube linki 
