@@ -16,15 +16,13 @@ https://www.instagram.com/p/CGsFZzfAq5T/
 
 Özellikleri 
 
-📌 Özelleştirlebilir ekrana sahiptir. UI designe dikkat edildi.
+📌 Masalar kısmına müşteri seç, açık adisyonlar, Paket servis kısmı ekledi
 
-📌 Masalar kısmına müşteri seç, açık adisyonlar, Paket servis kısmı ekledim
+📌 Sipariş kısmında adisyon notu eklendi ve onun için klavye eklendi
 
-📌 Sipariş kısmında adisyon notu eklendi ve onun için klavye eklendim
+📌 Sipariş kısmı daha komplex hale getirildi
 
-📌 Sipariş kısmı daha komplex hale getirdim
-
-📌 Sipariş iptal kısmını yaptım. Ayrıca Raporlar kısmınında önceki verilerden grafik oluşturdum.
+📌 Sipariş iptal kısmını yaptım. Ayrıca Raporlar kısmınında önceki verilerden grafik oluşturuldu
 
 📌 Tasarım, metin ve masa ayarları Ayarlar formuna taşındı.
 
