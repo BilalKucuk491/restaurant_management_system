@@ -20,29 +20,59 @@ https://www.instagram.com/p/CGsFZzfAq5T/
 
 📌 Masalar kısmına müşteri seç, açık adisyonlar, Paket servis kısmı ekledim
 
-📌Sipariş kısmında adisyon notu eklendi ve onun için klavye eklendim
+📌 Sipariş kısmında adisyon notu eklendi ve onun için klavye eklendim
 
-📌Sipariş kısmı daha komplex hale getirdim
+📌 Sipariş kısmı daha komplex hale getirdim
 
-📌Sipariş iptal kısmını yaptım. Ayrıca Raporlar kısmınında önceki verilerden grafik oluşturdum.
+📌 Sipariş iptal kısmını yaptım. Ayrıca Raporlar kısmınında önceki verilerden grafik oluşturdum.
 
-📌Tasarım, metin ve masa ayarları Ayarlar formuna taşındı.
+📌 Tasarım, metin ve masa ayarları Ayarlar formuna taşındı.
 
-📌Ödeme formunda sipariş ücretleri yazdırılabilir hale getirildi.
+📌 Ödeme formunda sipariş ücretleri yazdırılabilir hale getirildi.
 
-📌Müşteriler formu yapıldı.
+📌 Fatura ve Faturalama
 
-📌Ayarlar formu yapıldı.
+📌 Yerleşik Muhasebe
 
-📌Raporlar formu yapıldı.
+📌 Çalışan Yönetimi
 
-📌Mutfak formu yapıldı.
+📌 Envanter yönetimi
 
-📌Çıkış formu yapıldı.
+📌 Mutfak Yönetimi
+
+📌 Menü Yönetimi
+
+📌 Rezervasyon Yönetimi
+
+📌 Tablo Yönetimi
+
+📌 Müşteriler formu yapıldı.
+
+📌 Ayarlar formu yapıldı.
+
+📌 Raporlar formu yapıldı.
+
+📌 Mutfak formu yapıldı.
+
+📌 Çıkış formu yapıldı.
 
 📌 C# da temalar eklendi. Masayı daire şeklinde kötüydü eklemedim. Belki elliptical şeklinde eklerim.
 
 📌 Tarih kısmı düzeltildi.
+
+📌 Müşteri Hesabı Profilleri
+
+📌 İndirim Yönetimi
+
+📌 Hediye Kartı Yönetimi
+
+📌 Sadakat programı
+
+📌 Gelir yönetimi
+
+📌 Yemeksepeti Entegrasyonu (Yapmadım)
+
+📌 Getir Entegrasyonu (Yapmadım)
 
 📌 Masalar kısmında sipariş çıkarma, sipariş kaydetme ya da silme eklendi.
 
@@ -50,5 +80,25 @@ https://www.instagram.com/p/CGsFZzfAq5T/
 
 📌 Öneriler üzerine sipariş kısmında masa isimleri masa1 gibiydi masa 1 düzeltildi.
 
-📌 Masalar kısmında öneriler üzerine masa ismi gözüküyor.
+📌 Masalar kısmında öneriler üzerine masa ismi gözüküyordu düzeltildi.
+
+📌 Teslimat Yönetimi
+
+📌 Hediye Kartı Yönetimi
+
+📌 Envanter yönetimi
+
+📌 Sadakat programı
+
+📌 Raporlama / Analiz
+
+📌 Ayrı Çekler
+
+📌 Bölünmüş Kontroller
+
+📌 Tablo Yönetimi
+
+📌 İpuçları Yönetimi
+
+
 
