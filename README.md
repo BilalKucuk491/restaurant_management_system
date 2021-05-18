@@ -5,7 +5,7 @@ Bitirme projesi olarak yaptığım Restoran otomasyonunun tanıtıldığı ve ba
 https://adisyon.megarasoft.info/
 
 Youtube linki 
-(Yarın)
+(Gelecekte)
 
 İnstagram linki (İnstagram da yaptığım çalışamaları paylaşmıştım)
 https://www.instagram.com/p/CMzY1dgjBJ7/
