@@ -7,7 +7,7 @@ https://adisyon.megarasoft.info/
 Youtube linki 
 (Gelecekte)
 
-İnstagram linki (İnstagram da yaptığım çalışamaları paylaşmıştım)
+İnstagram linki (İnstagram da yaptığım çalışamaları parça parça paylaşmıştım)
 https://www.instagram.com/p/CMzY1dgjBJ7/
 https://www.instagram.com/p/CMRu8-GggLQ/
 https://www.instagram.com/p/CITJW1PAbS8/
