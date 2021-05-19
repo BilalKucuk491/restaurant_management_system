@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84A81B4C-D0DA-467E-92F9-658761A2E4FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>restaurantt</RootNamespace>
+    <AssemblyName>restaurantt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAdisyon.cs" />
+    <Compile Include="cBackColor.cs" />
+    <Compile Include="cGenel.cs" />
+    <Compile Include="cGeneralDesign.cs" />
+    <Compile Include="cMasalar.cs" />
+    <Compile Include="cMusteriler.cs" />
+    <Compile Include="cOdeme.cs" />
+    <Compile Include="cPaketler.cs" />
+    <Compile Include="cPersonelGorev.cs" />
+    <Compile Include="cPersonelHareketleri.cs" />
+    <Compile Include="cPersoneller.cs" />
+    <Compile Include="cRezervasyon.cs" />
+    <Compile Include="cSiparis.cs" />
+    <Compile Include="cUrunCesitleri.cs" />
+    <Compile Include="cDiger.cs" />
+    <Compile Include="ExitMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitMessageBox.Designer.cs">
+      <DependentUpon>ExitMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalizAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalizAyari.Designer.cs">
+      <DependentUpon>frmAnalizAyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBahce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBahce.Designer.cs">
+      <DependentUpon>frmBahce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvAyari.Designer.cs">
+      <DependentUpon>frmEvAyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKasaIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKasaIslemleri.Designer.cs">
+      <DependentUpon>frmKasaIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciAyari.Designer.cs">
+      <DependentUpon>frmKullaniciAyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLock.Designer.cs">
+      <DependentUpon>frmLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLodingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLodingMenu.Designer.cs">
+      <DependentUpon>frmLodingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparislerAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparislerAyari.Designer.cs">
+      <DependentUpon>frmSiparislerAyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriEkleme.Designer.cs">
+      <DependentUpon>FrmMusteriEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMutfak.Designer.cs">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaketSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaketSiparis.Designer.cs">
+      <DependentUpon>frmPaketSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaporlar.Designer.cs">
+      <DependentUpon>frmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis.Designer.cs">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAyarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAyarlari.Designer.cs">
+      <DependentUpon>frmMenuAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparisKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparisKontrol.Designer.cs">
+      <DependentUpon>frmSiparisKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeknikDestekAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeknikDestekAyari.Designer.cs">
+      <DependentUpon>frmTeknikDestekAyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeras.Designer.cs">
+      <DependentUpon>frmTeras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyboard.Designer.cs">
+      <DependentUpon>keyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="cSound.cs" />
+    <EmbeddedResource Include="ExitMessageBox.resx">
+      <DependentUpon>ExitMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalizAyari.resx">
+      <DependentUpon>frmAnalizAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBahce.resx">
+      <DependentUpon>frmBahce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvAyari.resx">
+      <DependentUpon>frmEvAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKasaIslemleri.resx">
+      <DependentUpon>frmKasaIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciAyari.resx">
+      <DependentUpon>frmKullaniciAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLock.resx">
+      <DependentUpon>frmLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLodingMenu.resx">
+      <DependentUpon>frmLodingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasalar.resx">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparislerAyari.resx">
+      <DependentUpon>frmSiparislerAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriEkleme.resx">
+      <DependentUpon>FrmMusteriEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriler.resx">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMutfak.resx">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaketSiparis.resx">
+      <DependentUpon>frmPaketSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaporlar.resx">
+      <DependentUpon>frmRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyon.resx">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparis.resx">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAyarlari.resx">
+      <DependentUpon>frmMenuAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparisKontrol.resx">
+      <DependentUpon>frmSiparisKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeknikDestekAyari.resx">
+      <DependentUpon>frmTeknikDestekAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeras.resx">
+      <DependentUpon>frmTeras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keyboard.resx">
+      <DependentUpon>keyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful-Plait-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş-butonu-png-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş-butonu-png-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş-butonu-png-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-exit-wikimedia-commons-brand-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-exit-wikimedia-commons-brand-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lets-eat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\493-4932220_lets-eat-calligraphy-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lets-Eat-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square-button-icons_226384.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60749-setting-images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasaislemleri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasaislemleri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raporlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mutfak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mutfak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-Beautiful-and-Minimalist-Presentation-Backgrounds-012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v475-katie-101-abstractblackandwhitebg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78de9d88242b5bea13b7adf2e33b0b93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dea1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restoran.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anayemek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecekler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatlilar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastfood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastfood1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makarna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arasicak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anayemeks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siparisButonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\mainfood_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\beverages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\fastfood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\soup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\arasicak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Foods\png\pasta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\00_desk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\01_desk_long.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\02_reservation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\05_cash_transactions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\06_kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\07_kitchen_long.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\08_reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\09_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\10_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\11_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\04_customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\desk_long.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\takeaway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\kitchen_long.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Grid\png\raporlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\rezerve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\acik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\bos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Buttons\png\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text1.png" />
+    <None Include="Resources\text.png" />
+    <None Include="bin\Debug\Buttons\png\zreport.png" />
+    <None Include="bin\Debug\Buttons\png\cancel.png" />
+    <Content Include="bin\Sound\buttonClick.wav" />
+    <Content Include="bin\Sound\mouseDouble.wav" />
+    <None Include="Resources\aa.png" />
+    <None Include="Resources\aa1.png" />
+    <Content Include="Resources\acikRezerve.png" />
+    <Content Include="Resources\bos.png" />
+    <None Include="Resources\colorpalet.png" />
+    <Content Include="Resources\dolu.png" />
+    <None Include="Resources\kare.png" />
+    <Content Include="Resources\rezerve.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
