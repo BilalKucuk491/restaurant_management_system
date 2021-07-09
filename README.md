@@ -2,6 +2,7 @@
 
 Password = 123456
 
+
 Restoran otomasyonuna bakmak istiyorsanız rar dosyasını indiriniz. Devexpress kullanmadım tasarımları ve toollari dahi kendim tek tek yaptım.
 Bitirme projesi olarak yaptığım Restoran otomasyonunun tanıtıldığı ve başka projem olan wordpress website linki aşağıda verilmiştir.
 https://adisyon.megarasoft.info/
